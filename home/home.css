@@ -1,0 +1,306 @@
+body {
+    background-color: #121212;
+    color: #f7f7fb;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Horizontal navbar started */
+.hornavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B1B1B;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 0;
+    height: 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+    height: auto;
+    width: 130px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #2A2A2A;
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 5px 15px;
+    width: 40vw;
+    transition: border 0.3s;
+}
+
+.search-container:focus-within {
+    border: 1px solid #00FFD5;
+}
+
+.search-container input[type="search"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 8px;
+    outline: none;
+}
+
+.sign-in-btn {
+    background-color: #00FFD5;
+    padding: 8px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.sign-in-btn:hover {
+    background-color: #00e6c0;
+    color: #000;
+
+}
+
+/* Horizontal navbar ended */
+
+/* vertical navbar started */
+.ver-navbar {
+    background-color: #1B1B1B;
+    height: 89vh;
+    border-right: 1px solid #333;
+}
+
+.ver-nav-svg {
+    padding-left: 5px;
+}
+
+.nav-link {
+    margin-bottom: 40px;
+    color: #636363;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #00FFD5;
+}
+
+/* vertical navbar ended */
+
+/* banner Started */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    font-family: "Poppins", sans-serif;
+
+    font-style: normal;
+}
+
+
+.homepage {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../images/img.png );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 20px;
+
+
+}
+
+.heading::first-letter {
+    font-size: 4em;
+    color: #00FFD5;
+    float: left;
+    line-height: 0.8px;
+
+}
+
+.para {
+    font-size: 15px;
+    margin-bottom: 34px;
+}
+
+.btn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: initial;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 40px;
+    padding: 15px 13px;
+    border: 1.5px solid yellow;
+    font-size: 17px;
+    background-color: #028f77;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+    transition: 1s;
+}
+
+.col-11::-webkit-scrollbar {
+    display: none;
+}
+/* banner ended*/
+
+/* music navigation links started */
+
+.music-name a {
+    border: 1.5px solid #028f77;
+    color: #028f77;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.music-name a:hover {
+    border: 1.5px solid yellow;
+    background-color: #028f77;
+    color: #fff;
+}
+
+/* music navigation links ended */
+
+/* song card started */
+.song-card {
+    width: 80%;
+    position: relative;
+    height: auto;
+    padding: 5px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    background-color: #1B1B1B;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.song-card:hover {
+    transform: scale(1.05);
+}
+
+.song-img {
+    width: 100%;
+    height: 20vh;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.song-name {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.singer-name {
+    color: #636363;
+    font-size: 16px;
+    text-align: center;
+}
+
+.play-btn {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 15px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #00FFD5;
+    text-align: center;
+}
+
+.download-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    color: #fff;
+}
+
+.song-cards {
+    display: flex;
+    flex-direction: row;
+    margin: 60px;
+    justify-content: space-between;
+}
+
+/* song card Ended */
+
+/* Footer started */
+.footer {
+    width: 100%;
+    background-color: #1B1B1B;
+    padding: 50PX;
+    padding-top: 90px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+ul {
+    padding: 0;
+    margin-left: 5px;
+}
+
+UL LI {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #636363;
+}
+
+ul li a:hover {
+    color: #00FFD5;
+}
+
+.footer-last-part {
+    background-color: #121212;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Footer ended */
