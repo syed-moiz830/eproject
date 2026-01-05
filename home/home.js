@@ -25,3 +25,19 @@ playbtn.forEach((btn, index) => {
         }
     });
 });
+let downloadbtn = document.querySelectorAll(".download-btn");
+downloadbtn.forEach(dbtn => {
+    dbtn.addEventListener("click", (e) => {
+        let email = localStorage.getItem("email");
+        let password = localStorage.getItem("pass")
+        if (!(email && password)) {
+            e.preventDefault()
+            alert("Register First To Download")
+
+
+
+        }
+
+
+    })
+})

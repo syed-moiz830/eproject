@@ -1,0 +1,74 @@
+body {
+    background-image: url(../images/sign\ in\ image.png);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    color: red;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: small;
+    display: none;
+}
+
+.sign-in-content {
+    background-color: #1B1B1B;
+    opacity: 90%;
+    width: 40%;
+    margin: auto;
+    height: auto;
+    margin-top: 20vh;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+.mainhead {
+    color: #00FFD5;
+}
+
+.first-p {
+    color: #fff;
+}
+
+input[type="TEXT"] {
+    background-color: #2A2A2A;
+    width: 30vw;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+input[type="password"] {
+    background-color: #2A2A2A;
+    width: 30vw;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.password-div {
+    position: relative;
+    width: 30vw;
+}
+
+svg {
+    position: absolute;
+    right: 6px;
+    top: 40px;
+}
+
+.btn {
+    background-color: #00FFD5;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
