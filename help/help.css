@@ -117,7 +117,7 @@ body {
 }
 
 /* vertical navbar ended */
-.col-11::-webkit-scrollbar {
+.col-lg-11::-webkit-scrollbar {
     display: none;
 }
 

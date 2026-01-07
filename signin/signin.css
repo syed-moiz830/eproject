@@ -37,7 +37,7 @@ body {
     color: #fff;
 }
 
-input[type="TEXT"] {
+input[type="email"] {
     background-color: #2A2A2A;
     width: 30vw;
     padding: 10px;

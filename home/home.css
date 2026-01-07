@@ -196,7 +196,7 @@ body {
     transition: 1s;
 }
 
-.col-11::-webkit-scrollbar {
+.col-lg-11::-webkit-scrollbar {
     display: none;
 }
 /* banner ended*/
