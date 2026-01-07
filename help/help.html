@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MusicWorld</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -20,11 +20,11 @@
 
             <div class="search-container">
                 <input type="search" placeholder="Search artists, songs, or albums...">
-                <a href="" class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#888888"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="7"></circle>
-                    <line x1="21" y1="21" x2="16.8" y2="16.8"></line>
-                </svg></a>
+                <a href="" class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                        stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16.8" y2="16.8"></line>
+                    </svg></a>
             </div>
 
             <a href="../signin/signin.html" class="sign-in-btn">Sign-in</a>
@@ -32,7 +32,7 @@
         <!-- Horizontal navbar ended -->
         <div class="row g-0">
             <!-- vertical navbar started  -->
-            <div class="col-1">
+            <div class="col-lg-1 col-md-2 col-sm-3 c0l-12">
                 <nav class="ver-navbar">
                     <a href="../home/home.html" class="nav-link" style="padding-top: 30px;">
                         <div>
@@ -45,7 +45,7 @@
                         </div>
                         <span>home</span>
                     </a>
-                    <a href="" class="nav-link">
+                    <a href="../music/rock.html" class="nav-link">
                         <div>
                             <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -87,11 +87,46 @@
             </div>
             <!-- vertical navbar ended -->
             <!-- /* content Started */ -->
-            <div style="overflow-x:hidden;overflow-y: auto; height: 89vh;" class="col-11">
-                
+
+            <div style="overflow-x:hidden;overflow-y: auto; height: 89vh;" class="col-lg-11 col-md-10 col-sm-9 col-12">
+                <div class="div">
+                    <div class="MAIN-CONTENT-div">
+                        <p class="heading-main">WE ARE LISTENING</p>
+
+                        <p class=" content-main">
+
+                            We would love to hear from you! If you have any question or suggestion, please dont hesitate
+                            to reach out to us. You can contact us by filling out the form below or sending an email to
+                            Our dedicated team will get back to you as soon as possible. Thank you for your interest in
+                            Music World!
+                        </p>
+                        <div class="row name-containar">
+                            <div class="col-lg-6 col-12">
+                                <h6 class="sub-heading">First-Name</h6>
+                                <input id="first-name" type="text" placeholder="Enter Your First name">
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <h6 class="sub-heading">Last-Name</h6>
+                                <input type="text" id="last-name" placeholder="Enter Your Last name">
+                            </div>
+                            <div class="row email-containar">
+                                <h6 class="sub-heading" style="margin-top: 15px;">Email ID</h6>
+                                <input type="email" id="email" placeholder="enter Email">
+                            </div>
+                            <div class="">
+                                <h6 class="sub-heading" style="margin-top: 15px;">Message</h6>
+                                <textarea id="message" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button class="btn">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
+    <script src="./help.js"></script>
 </body>
 
 </html>

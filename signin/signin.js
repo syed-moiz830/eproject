@@ -2,40 +2,53 @@ let username = document.getElementById("username");
 let password = document.getElementById("password");
 let error = document.getElementById("error");
 
-password.addEventListener("click", () => {
-    if (username.value === "") {
-        document.querySelector("#mini-error").style.display = "block"
-        username.focus();
+username.addEventListener("input", () => {
+    if (username.value !== "") {
+        document.querySelector("#mini-error").style.visibility = "hidden"
 
+    } 
+})
+password.addEventListener("input", () => {
+    if (password.value !== "") {
+        error.style.visibility = "hidden"
+
+    } 
+})
+password.addEventListener("click",()=>{
+    if (username.value==="") {
+        document.querySelector("#mini-error").style.visibility = "visible"
+        username.focus()
+
+        
     } else {
-        document.querySelector("#mini-error").style.display = "none"
+         document.querySelector("#mini-error").style.visibility = "hidden"
     }
 })
-
 let btn = document.querySelector(".btn");
 btn.addEventListener("click", (e) => {
     e.preventDefault()
     if (username.value === "" && password.value === "") {
-        error.style.display = "block"
-        document.querySelector("#mini-error").style.display = "block"
+        error.style.visibility= "visible"
+
+        document.querySelector("#mini-error").style.visibility= "visible"
 
 
     }
     else if (username.value === "") {
-        error.style.display = "none"
-        document.querySelector("#mini-error").style.display = "block"
+        error.style.visibility = "hidden"
+        document.querySelector("#mini-error").style.visibility= "visible"
 
 
     }
     else if (password.value === "") {
-        error.style.display = "block"
-        document.querySelector("#mini-error").style.display = "none"
+        error.style.visibility = "visible"
+        document.querySelector("#mini-error").style.visibility = "hidden"
 
 
     }
     else {
-        error.style.display = "none"
-        document.querySelector("#mini-error").style.display = "none"
+        error.style.visibility= "hidden"
+        document.querySelector("#mini-error").style.visibility= "hidden"
         localStorage.setItem("email", username.value);
         localStorage.setItem("pass", password.value);
         setTimeout(() => {

@@ -1,5 +1,6 @@
 body {
     background-image: url(../images/sign\ in\ image.png);
+    color: #fff;
 }
 
 * {
@@ -8,12 +9,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-p {
+#error ,#mini-error {
     color: red;
-    margin-top: 10px;
+    margin-top:5px;
     margin-left: 10px;
     font-size: small;
-    display: none;
+    visibility: hidden;
+    margin-bottom: 0;
 }
 
 .sign-in-content {
@@ -42,6 +44,7 @@ input[type="TEXT"] {
     border: none;
     border-radius: 10px;
     margin-top: 30px;
+    color: #fff;
 }
 
 input[type="password"] {
@@ -51,6 +54,7 @@ input[type="password"] {
     border: none;
     border-radius: 10px;
     margin-top: 30px;
+    color: #fff;
 }
 
 .password-div {
