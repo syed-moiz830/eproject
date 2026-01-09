@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../albums/album.css">
+  <link rel="stylesheet" href="../../album.css">
 </head>
 <body>
   <div class="container-fluid m-0 p-0">
@@ -132,7 +132,7 @@
   </div>
   <script>var trackcard = "";
 
-fetch('../albums/albumjson/album1.json')
+fetch('../json/album1.json')
     .then(Response => Response.json())
     .then(data => {
         for (const item of data) {
@@ -159,6 +159,6 @@ fetch('../albums/albumjson/album1.json')
         document.querySelector(".track-cards").innerHTML = trackcard;
         initializeMusicControls();
     });</script>
-  <script src="../albums/album.js"></script>
+  <script src="../../album.js"></script>
 </body>
 </html>
