@@ -24,10 +24,10 @@ msgbtn.addEventListener("click", () => {
 
         default:
             alert("Message Is Sent");
-            msg.value === ""
-            email.value === ""
-            lastname.value === ""
-            firstname.value === ""
+            msg.value =""
+            email.value = ""
+            lastname.value = ""
+            firstname.value = ""
             break;
     }
 

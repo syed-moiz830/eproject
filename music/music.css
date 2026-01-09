@@ -72,6 +72,7 @@ body {
     background-color: #1B1B1B;
     height: 89vh;
     border-right: 1px solid #333;
+    
 }
 
 .ver-nav-svg {
@@ -345,15 +346,16 @@ body {
     flex: 1;
 }
 
-@media (max-width: 1236px) {
+@media (max-width: 1140px) {
     .composers-col {
         width: 100%;
     }
 }
 
-@media (max-width: 1236px) {
+@media (max-width: 1140px) {
     .top-composer-head {
         font-size: 2em;
+        margin-left: 10px;
     }
 
     .col-cat-related-article {
@@ -386,7 +388,7 @@ body {
     }
 }
 
-@media (min-width:1237px) {
+@media (min-width:1140px) {
     .cards {
         flex-direction: column;
         overflow: visible;
