@@ -1,0 +1,203 @@
+body {
+    background: #0b0b0b;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/*HEADINGS*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title {
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+/* Paragraphs & secondary text */
+p,
+.text-secondary {
+    color: #d6d6d6 !important;
+    font-weight: 400;
+}
+
+/* Cards */
+.card {
+    background: #181818;
+    border: 1px solid #2f2f2f;
+    border-radius: 14px;
+}
+
+/* Artist image */
+.artist-img {
+    width: 140px;
+    border-radius: 14px;
+    border: 2px solid #333;
+}
+
+/* Badges */
+.badge-custom {
+    background: #2d2d2d;
+    color: #ffffff;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+}
+
+/* Song list */
+.song-item {
+    display: flex;
+    gap: 20px;
+
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #333;
+    color: #ffffff;
+}
+
+.album-link {
+    text-decoration: none;
+    font-size: large;
+    color: #bfbfbf;
+}
+
+.album-image {
+    width: 60px;
+    height: 40px;
+}
+
+.album-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Career Years */
+.year {
+    display: block;
+    color: #00FFD5;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+/* Horizontal navbar started */
+.hornavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B1B1B;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 0;
+    height: 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+    height: auto;
+    width: 130px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #2A2A2A;
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 5px 15px;
+    width: 40vw;
+    transition: border 0.3s;
+}
+
+.search-container:focus-within {
+    border: 1px solid #00FFD5;
+}
+
+.search-container input[type="search"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 8px;
+    outline: none;
+}
+
+.sign-in-btn {
+    background-color: #00FFD5;
+    padding: 8px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.sign-in-btn:hover {
+    background-color: #00e6c0;
+    color: #000;
+
+}
+
+/* Horizontal navbar ended */
+
+/* vertical navbar started */
+.ver-navbar {
+    background-color: #1B1B1B;
+    height: 89vh;
+    border-right: 1px solid #333;
+
+
+}
+
+.ver-nav-svg {
+    padding-left: 5px;
+}
+
+.nav-link {
+    margin-bottom: 40px;
+    color: #636363;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    color: #00FFD5;
+}
+
+/* Responsive vertical navbar */
+@media (max-width: 575px) {
+    .ver-navbar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-top: 1px solid #333;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+    }
+
+    .nav-link {
+        margin-bottom: 0;
+    }
+
+}
+
+/* vertical-navbar-ended */
+
+.col-lg-11::-webkit-scrollbar {
+    display: none;
+}

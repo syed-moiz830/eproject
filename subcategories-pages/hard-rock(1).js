@@ -1,0 +1,32 @@
+// popup js
+let instrument1 = document.getElementsByClassName('instrument-card ')[0];
+                let instrument2 = document.getElementsByClassName('instrument-card ')[1];
+                let instrument3 = document.getElementsByClassName('instrument-card ')[2];
+                let popup = document.querySelector(".popup");
+                let popupimg = document.querySelector(".popup-img");
+                let popupname = document.querySelector(".popup-name");
+                let popupdesc = document.querySelector(".popup-desc");
+                instrument1.addEventListener("click", () => {
+                    popupimg.src = "../subcategories-pages/instrument-images/rock/hard-rock-img1.jpg";
+                    popupname.innerHTML = "Electric Guitar";
+                    popupdesc.innerHTML = `An electric guitar is a stringed instrument that uses pickups to convert string vibrations into electrical signals
+These signals are amplified through an amplifier to produce a loud, powerful sound`;
+                    popup.style.display = "flex";
+                })
+                instrument2.addEventListener("click", () => {
+                    popupimg.src = "../subcategories-pages/instrument-images/rock/hard-rock-image-2.jpg";
+                    popupname.innerHTML = "Drum Kit";
+                    popupdesc.innerHTML = `A drum kit is a collection of drums and cymbals played together to create rhythm and timing in music.
+It provides the beat and energy that drives a song forward.`;
+                    popup.style.display = "flex";
+                })
+                instrument3.addEventListener("click", () => {
+                    popupimg.src = "../subcategories-pages/instrument-images/rock/hard-rock-img3.webp";
+                    popupname.innerHTML = "Bass Guitar ";
+                    popupdesc.innerHTML = `A bass guitar produces low-pitched sounds that support the rhythm and harmony.`;
+                    popup.style.display = "flex";
+                })
+                let closebtn=document.querySelector('.close-btn');
+                closebtn.addEventListener("click",()=>{
+                    popup.style.display="none"
+                })
