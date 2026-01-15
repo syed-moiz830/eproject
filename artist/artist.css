@@ -33,7 +33,7 @@ p,
 
 /* Artist image */
 .artist-img {
-    width: 140px;
+    width: 200px;
     border-radius: 14px;
     border: 2px solid #333;
 }
@@ -64,14 +64,15 @@ p,
 }
 
 .album-image {
-    width: 60px;
+    width: 70px;
     height: 40px;
 }
 
 .album-image img {
+    padding:3px;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit:fill;
 }
 
 
