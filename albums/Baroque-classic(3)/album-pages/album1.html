@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicWorld.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../album.css">
+</head>
+<body>
+  <div class="container-fluid m-0 p-0">
+    <!-- Horizontal navbar started -->
+    <nav class="hornavbar">
+      <img src="../../../images/logo.png" class="navbar-brand" alt="MusicWorld Logo">
+
+      <div class="search-container">
+        <input type="search" placeholder="Search artists, songs, or albums...">
+        <a href="" class="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+            stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.8" y2="16.8"></line>
+          </svg></a>
+      </div>
+
+      <a href="../../../signin/signin.html" class="sign-in-btn">Sign-in</a>
+    </nav>
+    <!-- Horizontal navbar ended -->
+    <div class="row g-0">
+      <!-- vertical navbar started  -->
+      <div class="col-lg-1 col-md-2 col-sm-3 col-12">
+        <nav class="ver-navbar">
+          <a href="../../../home/home.html" class="nav-link">
+            <div>
+              <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9L12 2l9 7" />
+                <path d="M9 22V12h6v10" />
+              </svg>
+            </div>
+            <span>home</span>
+          </a>
+          <a href="../../../music/rock.html" class="nav-link">
+            <div>
+              <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
+              </svg>
+            </div>
+            <span>Music</span>
+          </a>
+          <a href="../../../search/search.html" class="nav-link">
+            <div>
+              <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <span>Search</span>
+
+          </a>
+          <a href="../../../help/help.html" class="nav-link">
+            <div>
+              <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="7" r="4" />
+                <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
+              </svg>
+            </div>
+            <span>Help</span>
+
+          </a>
+        </nav>
+      </div>
+      <!-- vertical navbar ended -->
+      <!-- /* content Started */ -->
+      <div style="overflow-x:hidden;overflow-y: auto; height: 89vh;" class="col-lg-11 col-md-10 col-sm-9 col-12">
+        <!-- Album hero started -->
+        <div class="hero row">
+          <img class="col-lg-3 col-md-4 col-sm-6 col-12 main-img"
+            src="../../Baroque-classic(3)/album-images/image1.jpg"
+            alt="Album">
+          <div class="col-lg-9 col-md-8 col-sm-6 col-12">
+            <h1>Golden Age of Counterpoint</h1>
+            <p>
+      This album celebrates the elegance and precision of the Baroque era, weaving intricate melodies and layered harmonies into a refined musical tapestry. Each composition reflects balance, order, and decorative beauty, echoing the grandeur of royal courts and sacred halls while showcasing the intellectual depth of classical counterpoint.
+            </p>
+            <p><b>ReleaseOn</b> August 15,1971</p>
+        </div>
+        </div>
+        <!-- album hero ended -->
+        <!-- Tracks  started-->
+        <div class="tracks row">
+          <h2 class="col-12" style="margin-left: 20px;margin-bottom: 20px;">Track List</h2>
+          <div class="track-cards col-12"></div>
+        </div>
+        <!-- track ended -->
+        <!-- Reviews -->
+        <div class="reviews row">
+          <h2 class="row" style="margin-bottom: 20px;">Reviews</h2>
+          <div class="col-lg-4">
+            <div class="review ">
+              “Masterpiece of musical variety and depth.”
+              <span>—rock@888</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="review ">
+              “Perfect balance of power and atmosphere.”
+              <span>— Benzek-@45</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="review ">
+              “One of the most influential historical classical albums ever.”
+              <span>— Alice@32</span>
+              <audio src="../songs-images/A2S7.jpg"></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  var trackcard = "";
+fetch('../../Baroque-classic(3)/json/album1.json')
+    .then(Response => Response.json())
+    .then(data => {
+        for (const item of data) {
+            trackcard += `
+          <div class="track-card col-12 mb-3"> 
+              <div class="d-flex align-items-center">
+                <img src="${item.image}" class="song-img" alt="">
+                <p class="song-name mb-0 ms-3">${item.name}</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <button class="play-btn">▶</button>
+                <div class="dropdown">
+                  <button class="btn dropdown-btn" data-bs-toggle="dropdown"> ⋮ </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a href="${item.audio}" download class="dropdown-item download-btn">Download</a></li>
+                  </ul>
+                </div>
+              </div>
+              <audio class="audio" src="${item.audio}"></audio>
+          </div>`;
+        }
+
+        document.querySelector(".track-cards").innerHTML = trackcard;
+        initializeMusicControls();
+    });</script>
+  <script src="../../album.js"></script>
+</body>
+</html>
