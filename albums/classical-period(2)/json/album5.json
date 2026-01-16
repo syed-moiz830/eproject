@@ -1,0 +1,16 @@
+[{"name":"Mozart: Piano Sonata No. 11",
+"image":"../../classical-period(2)/song-images/a5s1.jpg",
+"audio":"../../hard-rock(1)/songs/A2S1.mp3"},
+{"name":"Clementi: Sonatina in C Major",
+"image":"../../classical-period(2)/song-images/a5s2.webp",
+"audio":"../../hard-rock(1)/songs/A2S2.mp3"},
+{"name":"Beethoven: Pathetique Sonata",
+"image":"../../classical-period(2)/song-images/a5s3.png",
+"audio":"../../hard-rock(1)/songs/A2S3.mp3"},
+{"name":"Haydn: Piano Sonata in D",
+"image":"../../classical-period(2)/song-images/a5s4.jpg",
+"audio":"../../hard-rock(1)/songs/A2S4.mp3"},
+{"name":"Mozart: Twelve Variations on 'Ah vous dirai-je, Maman'",
+"image":"../../classical-period(2)/song-images/a5s5.jpg",
+"audio":"../../hard-rock(1)/songs/A2S5.mp3"}
+]
