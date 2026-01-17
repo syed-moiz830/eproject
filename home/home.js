@@ -26,23 +26,6 @@ playbtn.forEach((btn, index) => {
         }
     });
 });
-// js for download button
-let email = localStorage.getItem("email");
-let password = localStorage.getItem("pass")
-let downloadbtn = document.querySelectorAll(".download-btn");
-downloadbtn.forEach(dbtn => {
-    dbtn.addEventListener("click", (e) => {
-        if (!(email && password)) {
-            e.preventDefault()
-            alert("Register First To Download")
-
-
-
-        }
-
-
-    })
-})
 // js for signout button
 let signBtn = document.querySelector(".sign-in-btn");
 

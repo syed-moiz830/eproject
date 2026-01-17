@@ -221,7 +221,8 @@ body {
 
 /* song card started */
 .song-card {
-    width: 80%;
+    width: 200px;
+    height: 230px;
     position: relative;
     height: auto;
     padding: 5px;
@@ -244,7 +245,7 @@ body {
 }
 
 .song-name {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bold;
     text-align: center;
     margin-bottom: 0;
@@ -266,20 +267,6 @@ body {
     background-color: #00FFD5;
     text-align: center;
 }
-
-.download-btn {
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.download-btn:hover {
-    color: #fff;
-}
-
 .song-cards {
     display: flex;
     flex-direction: row;
