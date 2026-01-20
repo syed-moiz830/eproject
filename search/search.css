@@ -67,6 +67,14 @@ body {
 
 }
 
+/* responsive sign-in-btn */
+@media (max-width: 451px) {
+    .sign-in-btn {
+        padding: 5px;
+    }
+
+}
+
 /* Horizontal navbar ended */
 
 /* vertical navbar started */
@@ -170,3 +178,44 @@ body {
     height: 100%;
     object-fit: fill;
 }
+
+/* Footer started */
+.footer {
+    width: 100%;
+    background-color: #1B1B1B;
+    padding: 50PX;
+    padding-top: 90px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+ul {
+    padding: 0;
+    margin-left: 5px;
+}
+
+UL LI {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #636363;
+}
+
+ul li a:hover {
+    color: #00FFD5;
+}
+
+.footer-last-part {
+    background-color: #121212;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Footer ended */

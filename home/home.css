@@ -1,7 +1,7 @@
 body {
     background-color: #121212;
     color: #f7f7fb;
-   font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -67,6 +67,14 @@ body {
 
 }
 
+/* responsive sign-in-btn */
+@media (max-width: 451px) {
+    .sign-in-btn {
+        padding: 5px;
+    }
+
+}
+
 /* Horizontal navbar ended */
 
 /* vertical navbar started */
@@ -74,8 +82,8 @@ body {
     background-color: #1B1B1B;
     height: 89vh;
     border-right: 1px solid #333;
-    
-    
+
+
 }
 
 .ver-nav-svg {
@@ -94,6 +102,7 @@ body {
 .nav-link:hover {
     color: #00FFD5;
 }
+
 /* Responsive vertical navbar */
 @media (max-width: 575px) {
     .ver-navbar {
@@ -199,6 +208,7 @@ body {
 .col-lg-11::-webkit-scrollbar {
     display: none;
 }
+
 /* banner ended*/
 
 /* music navigation links started */
@@ -267,14 +277,18 @@ body {
     background-color: #00FFD5;
     text-align: center;
 }
+
 .song-cards {
     display: flex;
     flex-direction: row;
     margin: 60px;
     justify-content: space-between;
-    overflow-x:AUTO;
+    overflow-x: AUTO;
 }
-.song-cards::-webkit-scrollbar{display: none;}
+
+.song-cards::-webkit-scrollbar {
+    display: none;
+}
 
 /* song card Ended */
 

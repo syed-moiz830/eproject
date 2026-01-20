@@ -65,6 +65,14 @@ body {
     color: #000;
 }
 
+/* responsive sign-in-btn */
+@media (max-width: 451px) {
+    .sign-in-btn {
+        padding: 5px;
+    }
+
+}
+
 /* Horizontal navbar ended */
 
 /* vertical navbar started */
@@ -72,7 +80,7 @@ body {
     background-color: #1B1B1B;
     height: 89vh;
     border-right: 1px solid #333;
-    
+
 }
 
 .ver-nav-svg {
@@ -167,7 +175,7 @@ body {
     padding-right: 60px;
     flex-shrink: 0;
     height: 100%;
-    object-fit:fill;
+    object-fit: fill;
     object-position: center;
 }
 
@@ -218,24 +226,39 @@ body {
         transform: translateX(0);
     }
 }
+
 @media (max-width: 1004px) {
-    .slider-div{padding: 0;
-        padding-top: 30px;}
-    .slider{margin: 0;
-}
-.img{padding: 0;}
-    
-}
-@media (max-width: 833px) {
-    .slider-div{padding: 0;
+    .slider-div {
+        padding: 0;
+        padding-top: 30px;
     }
-    .slider{margin: 0;
+
+    .slider {
+        margin: 0;
+    }
+
+    .img {
+        padding: 0;
+    }
+
 }
-.img{padding: 0;
-    padding-left: 10px;
-    padding-right: 10px;
- object-fit: contain;}
-    
+
+@media (max-width: 833px) {
+    .slider-div {
+        padding: 0;
+    }
+
+    .slider {
+        margin: 0;
+    }
+
+    .img {
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        object-fit: contain;
+    }
+
 }
 
 /* slider ended */
@@ -412,3 +435,43 @@ body {
 
 
 /* composer card ended */
+/* Footer started */
+.footer {
+    width: 100%;
+    background-color: #1B1B1B;
+    padding: 50PX;
+    padding-top: 90px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+ul {
+    padding: 0;
+    margin-left: 5px;
+}
+
+UL LI {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #636363;
+}
+
+ul li a:hover {
+    color: #00FFD5;
+}
+
+.footer-last-part {
+    background-color: #121212;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Footer ended */
