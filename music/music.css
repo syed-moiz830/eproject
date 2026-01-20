@@ -356,8 +356,9 @@ body {
 
 .composer-img {
     width: 80px;
+    height: 20px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     border-radius: 10px;
 }
 

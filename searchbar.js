@@ -215,13 +215,13 @@ function search() {
     else if (searchbar.value.toLowerCase() === "Master of Puppets Metallica".toLowerCase() || searchbar.value === "09/04/1978") {
         window.location.href = "../../../albums/heavy-metal-rock(3)/albumpages/album1.html"
     }
-    else if (searchbar.value.toLowerCase() === "Paranoid".toLowerCase() || searchbar.value === "09/02/197") {
+    else if (searchbar.value.toLowerCase() === "Paranoid".toLowerCase() || searchbar.value === "09/02/1970") {
         window.location.href = "../../../albums/heavy-metal-rock(3)/albumpages/album2.html"
     }
     else if (searchbar.value.toLowerCase() === "The Number of the Beast".toLowerCase() || searchbar.value === "19/05/1987") {
         window.location.href = "../../../albums/heavy-metal-rock(3)/albumpages/album1.html"
     }
-    else if (searchbar.value.toLowerCase() === "Painkiller".toLowerCase() || searchbar.value === "09/04/1978") {
+    else if (searchbar.value.toLowerCase() === "Painkiller".toLowerCase() || searchbar.value === "09/05/2024") {
         window.location.href = "../../../albums/heavy-metal-rock(3)/albumpages/album4.html"
     }
     else if (searchbar.value.toLowerCase() === "Reign in Blood".toLowerCase() || searchbar.value === "09/04/1978") {
@@ -281,7 +281,7 @@ function search() {
     else if (searchbar.value.toLowerCase() === "Christian Scott aTunde Adjuah".toLowerCase()) {
         window.location.href = "../../../artist/contemporary-jazz(2)/artist-pages/artist3.html"
     }
-    else if (searchbar.value.toLowerCase() === "Sidney Bechet".toLowerCase()) {
+    else if (searchbar.value.toLowerCase() === "Esperanza Spalding".toLowerCase()) {
         window.location.href = "../../../artist/contemporary-jazz(2)/artist-pages/artist4.html"
     }
     else if (searchbar.value.toLowerCase() === "Brad Mehldau".toLowerCase()) {

@@ -66,6 +66,13 @@ body {
     color: #000;
 
 }
+/* responsive sign-in-btn */
+@media (max-width: 451px) {
+    .sign-in-btn {
+        padding: 5px;
+    }
+
+}
 
 /* Horizontal navbar ended */
 
