@@ -223,11 +223,18 @@ body {
     height: 20vh;
     border-radius: 20px;
 }
-.artist-card{display: flex;
-flex-direction: column;
-align-items: center;}
-.artist-img{border-radius: 50%;
-height:30vh;width: 100%;}
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-img {
+    border-radius: 50%;
+    height: 30vh;
+    width: 100%;
+}
 
 
 .albumcards::-webkit-scrollbar,
@@ -244,9 +251,9 @@ height:30vh;width: 100%;}
 .popup {
     width: 50%;
     height: auto;
-    background-color:#1c1c1c;
+    background-color: #1c1c1c;
     margin: auto;
-    border: 1px solid  #00FFD5;
+    border: 1px solid #00FFD5;
     border-radius: 10px;
     position: fixed;
     top: 40%;
@@ -256,7 +263,10 @@ height:30vh;width: 100%;}
     display: none;
     gap: 18px;
 }
-.popup-img{width: 280px;}
+
+.popup-img {
+    width: 280px;
+}
 
 @media (max-width: 970px) {
     .popup {
@@ -277,3 +287,45 @@ height:30vh;width: 100%;}
 .albumcards {
     display: flex;
 }
+
+/* Footer started */
+.footer {
+    width: 100%;
+    background-color: #1B1B1B;
+    padding: 50PX;
+    padding-top: 90px;
+    margin: 0;
+    margin-top: 50px;
+    padding-right: 10px;
+}
+
+ul {
+    padding: 0;
+    margin-left: 5px;
+}
+
+UL LI {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #636363;
+}
+
+ul li a:hover {
+    color: #00FFD5;
+}
+
+.footer-last-part {
+    background-color: #121212;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Footer ended */

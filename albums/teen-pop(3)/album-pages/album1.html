@@ -11,6 +11,7 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../album.css">
 </head>
+
 <body>
   <div class="container-fluid m-0 p-0">
     <!-- Horizontal navbar started -->
@@ -18,13 +19,13 @@
       <img src="../../../images/logo.png" class="navbar-brand" alt="MusicWorld Logo">
 
       <div class="search-container">
-                <input type="search" placeholder="Search artists, albums or date(DD/MM/YYYY)... " class="search-bar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="search-btn"
-                    stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="7"></circle>
-                    <line x1="21" y1="21" x2="16.8" y2="16.8"></line>
-                </svg>
-            </div>
+        <input type="search" placeholder="Search artists, albums or date(DD/MM/YYYY)... " class="search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="search-btn" stroke="#888888"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.8" y2="16.8"></line>
+        </svg>
+      </div>
 
       <a href="../../../signin/signin.html" class="sign-in-btn">Sign-in</a>
     </nav>
@@ -82,13 +83,14 @@
       <div style="overflow-x:hidden;overflow-y: auto; height: 89vh;" class="col-lg-11 col-md-10 col-sm-9 col-12">
         <!-- Album hero started -->
         <div class="hero row">
-          <img class="col-lg-3 col-md-4 col-sm-6 col-12 main-img"
-            src="../../teen-pop(3)/album-images/image1.jpg"
+          <img class="col-lg-3 col-md-4 col-sm-6 col-12 main-img" src="../../teen-pop(3)/album-images/image1.jpg"
             alt="Album">
           <div class="col-lg-9 col-md-8 col-sm-6 col-12">
             <h1>Fearless</h1>
             <p>
-            Fearless captures teenage emotions like love, heartbreak, and self-discovery. With relatable lyrics and catchy melodies, it defined a generation of young listeners. The album’s storytelling made Taylor Swift a global star.
+              Fearless captures teenage emotions like love, heartbreak, and self-discovery. With relatable lyrics and
+              catchy melodies, it defined a generation of young listeners. The album’s storytelling made Taylor Swift a
+              global star.
             </p>
             <p><b>ReleaseOn</b> january 19,2010</p>
             <a href="../../songs.zip" download class="btn download-btn" id="album-downloader">Download</a>
@@ -119,7 +121,7 @@
           </div>
           <div class="col-lg-4">
             <div class="review ">
-             Perfect balance of aggression and melody.
+              Perfect balance of aggression and melody.
               <span>— paul@357</span>
             </div>
           </div>
@@ -127,14 +129,13 @@
       </div>
     </div>
   </div>
-  </div>
   <script>
-  var trackcard = "";
-fetch('../../teen-pop(3)/json/album1.json')
-    .then(Response => Response.json())
-    .then(data => {
+    var trackcard = "";
+    fetch('../../teen-pop(3)/json/album1.json')
+      .then(Response => Response.json())
+      .then(data => {
         for (const item of data) {
-            trackcard += `
+          trackcard += `
           <div class="track-card col-12 mb-3"> 
               <div class="d-flex align-items-center">
                 <img src="${item.image}" class="song-img" alt="">
@@ -155,7 +156,9 @@ fetch('../../teen-pop(3)/json/album1.json')
 
         document.querySelector(".track-cards").innerHTML = trackcard;
         initializeMusicControls();
-    });</script>
+      });</script>
   <script src="../../album.js"></script>
+  <script src="../../../searchbar.js"></script>
 </body>
+
 </html>

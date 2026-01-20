@@ -11,19 +11,20 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../album.css">
 </head>
+
 <body>
   <div class="container-fluid m-0 p-0">
     <!-- Horizontal navbar started -->
     <nav class="hornavbar">
       <img src="../../../images/logo.png" class="navbar-brand" alt="MusicWorld Logo">
-<div class="search-container">
-                <input type="search" placeholder="Search artists, albums or date(DD/MM/YYYY)... " class="search-bar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="search-btn"
-                    stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="7"></circle>
-                    <line x1="21" y1="21" x2="16.8" y2="16.8"></line>
-                </svg>
-            </div>
+      <div class="search-container">
+        <input type="search" placeholder="Search artists, albums or date(DD/MM/YYYY)... " class="search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="search-btn" stroke="#888888"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.8" y2="16.8"></line>
+        </svg>
+      </div>
 
       <a href="../../../signin/signin.html" class="sign-in-btn">Sign-in</a>
     </nav>
@@ -62,7 +63,7 @@
               </svg>
             </div>
             <span>Search</span>
-\
+            \
           </a>
           <a href="../../../help/help.html" class="nav-link">
             <div>
@@ -83,23 +84,22 @@
         <!-- Album hero started -->
         <div class="hero row">
           <img class="col-lg-3 col-md-4 col-sm-6 col-12 main-img"
-            src="../../historic-classical(1)/album-images/image3.jpg"
-            alt="Album">
+            src="../../historic-classical(1)/album-images/image3.jpg" alt="Album">
           <div class="col-lg-9 col-md-8 col-sm-6 col-12">
             <h1>Medieval Chronicles</h1>
             <p>
-This album paints the age of swords, faith, and fealty.
-Stone castles stand against shifting loyalties.
-Sacred chants blend with battlefield drums.
-Hope and fear coexist beneath royal banners.
-Common lives unfold in the shadow of crowns.
-The music mourns loss while honoring resilience.
-Darkness tests belief and endurance.
-From chaos, the seeds of change begin to grow.
+              This album paints the age of swords, faith, and fealty.
+              Stone castles stand against shifting loyalties.
+              Sacred chants blend with battlefield drums.
+              Hope and fear coexist beneath royal banners.
+              Common lives unfold in the shadow of crowns.
+              The music mourns loss while honoring resilience.
+              Darkness tests belief and endurance.
+              From chaos, the seeds of change begin to grow.
             </p>
             <p><b>ReleaseOn</b> May 11,1971</p>
             <a href="../../songs.zip" download class="btn download-btn" id="album-downloader">Download</a>
-        </div>
+          </div>
         </div>
         <!-- album hero ended -->
         <!-- Tracks  started-->
@@ -134,12 +134,12 @@ From chaos, the seeds of change begin to grow.
     </div>
   </div>
   <script>
-  var trackcard = "";
-fetch('../../historic-classical(1)/json/album3.json')
-    .then(Response => Response.json())
-    .then(data => {
+    var trackcard = "";
+    fetch('../../historic-classical(1)/json/album3.json')
+      .then(Response => Response.json())
+      .then(data => {
         for (const item of data) {
-            trackcard += `
+          trackcard += `
           <div class="track-card col-12 mb-3"> 
               <div class="d-flex align-items-center">
                 <img src="${item.image}" class="song-img" alt="">
@@ -160,7 +160,9 @@ fetch('../../historic-classical(1)/json/album3.json')
 
         document.querySelector(".track-cards").innerHTML = trackcard;
         initializeMusicControls();
-    });</script>
+      });</script>
   <script src="../../album.js"></script>
+  <script src="../../../searchbar.js"></script>
 </body>
+
 </html>
