@@ -11,7 +11,7 @@ function search() {
     else if (searchbar.value.toLowerCase() === "Harpsichord & Silk".toLowerCase() || searchbar.value === "15/08/2024") {
         window.location.href = "../../../albums/Baroque-classic(3)/album-pages/album3.html"
     }
-    else if (searchbar.value.toLowerCase() === "The Baroque Virtuoso".toLowerCase() || searchbar.value === "15/07/1971") {
+    else if (searchbar.value.toLowerCase() === "The Baroque Virtuoso".toLowerCase() || searchbar.value === "15/07/2023") {
         window.location.href = "../../../albums/Baroque-classic(3)/album-pages/album4.html"
     }
     else if (searchbar.value.toLowerCase() === "Sacred Harmonies".toLowerCase() || searchbar.value === "05/06/2023") {

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicWorld</title>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@500;700&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../music/music.css">
+</head>
+
+<body>
+    <div class="container-fluid m-0 p-0">
+        <!-- Horizontal navbar started -->
+        <nav class="hornavbar">
+            <img src="../images/logo.png" class="navbar-brand" alt="MusicWorld Logo">
+
+            <div class="search-container">
+                <input type="search" placeholder="Search artists, albums or date(DD/MM/YYYY)... " class="search-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="search-btn"
+                    stroke="#888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="21" y1="21" x2="16.8" y2="16.8"></line>
+                </svg>
+            </div>
+
+            <a href="../signin/signin.html" class="sign-in-btn">Sign-in</a>
+        </nav>
+        <!-- Horizontal navbar ended -->
+        <div class="row g-0">
+            <!-- vertical navbar started  -->
+            <div class="col-lg-1 col-md-2 col-sm-3 col-12">
+                <nav class="ver-navbar ">
+                    <a href="../home/home.html" class="nav-link">
+                        <div>
+                            <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M3 9L12 2l9 7" />
+                                <path d="M9 22V12h6v10" />
+                            </svg>
+                        </div>
+                        <span>home</span>
+                    </a>
+                    <a href="" class="nav-link">
+                        <div>
+                            <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9 18V5l12-2v13" />
+                                <circle cx="6" cy="18" r="3" />
+                                <circle cx="18" cy="16" r="3" />
+                            </svg>
+                        </div>
+                        <span>Music</span>
+
+
+                    </a>
+                    <a href="../search/search.html" class="nav-link">
+                        <div>
+                            <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                        </div>
+                        <span>Search</span>
+
+                    </a>
+                    <a href="../help/help.html" class="nav-link">
+                        <div>
+                            <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="7" r="4" />
+                                <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
+                            </svg>
+                        </div>
+                        <span>Help</span>
+
+                    </a>
+                </nav>
+            </div>
+            <!-- vertical navbar ended -->
+            <!-- /* content Started */ -->
+            <div style="overflow-y: auto;overflow-x: hidden; height: 89vh;" class="col-lg-11 col-md-10 col-sm-9 col-12">
+                <!-- music links started-->
+                <div class="row links">
+                    <span class="col-lg-1 col-sm-2 col-md-2 col-2"><a href="../music/rock.html"
+                            class="navlink ">ROCK</a></span>
+                    <span class="col-lg-1 col-sm-2 col-md-2 col-2"><a href="../music/jazz.html"
+                            class="navlink  ">JAZZ</a></span>
+                    <span class="col-lg-1 col-sm-2 col-md-2 col-2"><a href="../music/pop.html"
+                            class="navlink  ">POP</a></span>
+                    <span class="col-lg-1 col-sm-2 col-md-2 col-2"><a href="../music/rap.html"
+                            class="navlink  ">RAP</a></span>
+                    <span class="col-lg-1 col-sm-2 col-md-2 col-2"><a href="../music/class"
+                            class="navlink active">CLASSICAL</a></span>
+
+                </div>
+                <!-- music links ended -->
+                <!-- Slider started -->
+                <div class="slider-div">
+                    <div class="slider">
+                        <img src="../images/slider-img-1.png" class="img 1" alt="">
+                        <img src="../images/slider-img-2.png" class="img 2" alt="">
+                        <img src="../images/slider-img-3.png" class="img 3" alt="">
+                        <img src="../images/slider-img-4.png" class="img 4" alt="">
+                        <img src="../images/slider-img-5.png" class="img 5" alt="">
+
+                    </div>
+
+                </div>
+                <!-- slider ended -->
+                <div class="row g-0">
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-12 m-0 p-0 col-cat-related-article">
+                        <!-- categories started -->
+                        <h1 style="margin-top: 30px; margin-left: 20px;">Sub-Categories</h1>
+                        <div style=" margin-left: 15px; margin-right: 25px;" class="categories-cards">
+                            <div class="col-auto">
+                                <div class="category-card">
+                                    <img class="category-img" src="/music/categories-images/classical/image1.jpg"
+                                        alt="">
+                                    <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                            href="../subcategories-pages/historic-classic(1)/historic-classic.html"
+                                            class="category-content">Historic-Classical</a></p>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+
+                                <div class="category-card">
+                                    <img class="category-img" src="/music/categories-images/classical/image2.png"
+                                        alt="">
+                                    <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                            href="../subcategories-pages/classical-period(2)/classical-period.html"
+                                            class="category-content">Classical-period</a></p>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+
+                                <div class="category-card">
+                                    <img class="category-img" src="/music/categories-images/classical/image3.jpg"
+                                        alt="">
+                                    <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                            href="../subcategories-pages/Baroque-classic(3)/baroque-classic.html"
+                                            class="category-content">Baroque-Classical</a></p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- categories ended -->
+                        <!-- articles started -->
+                        <h1 style="margin-top: 10px; margin-left: 20px;">Relate Articles</h1>
+                        <div class="related-articles " style=" margin-left: 15px; margin-right: 25px;">
+                            <div class="col-auto">
+                                <div class="article">
+                                    <img class="article-img" src="/music/article-images/classical/article1.jpg" alt="">
+                                    <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                            href="https://www.travelandtourworld.com/news/article/string-quartet-biennale-amsterdam-2026-a-classical-music-revolution-you-cant-miss-prepare-to-be-awed-by-the-worlds-best-quartets/?utm_source=chatgpt.com#google_vignette"
+                                            class="article-content">String Quartet Biennale Amsterdam 2026: A Classical
+                                            Music Revolution You Can’t Miss – Prepare to Be Awed by the World’s Best
+                                            Quartets!</a></p>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="article">
+                                    <img class="article-img" src="/music/article-images/classical/article2.jpg" alt="">
+                                    <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                            href="https://operawire.com/lise-davidsen-anja-mittermuller-gerald-finley-among-2026-international-classical-music-awards-winners/?utm_source=chatgpt.com"
+                                            class="article-content">Lise Davidsen, Anja Mittermüller, Gerald Finley
+                                            Among 2026 International Classical Music Awards Winners</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="article">
+                                    <img class="article-img" src="/music/article-images/classical/article3.jpeg" alt="">
+                                    <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                            href="https://www.wbur.org/news/2026/01/13/2026-winter-classical-music-concert-guide-boston-massachusetts?utm_source=chatgpt.com"
+                                            class="article-content">An extensive guide to Greater Boston's winter
+                                            classical music concerts</a>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- articles ended -->
+                    </div>
+                    <!-- Top composer cards started -->
+
+                    <div class="col-lg-3 cl-md-3 col-sm-3 col-12 composers-col ">
+                        <div class="composers">
+                            <p class="top-composer-head"> Our Top Composers Collection</p>
+                            <div class="cards d-sm-flex">
+                                <div class="card ">
+                                    <img class="composer-img col-3"
+                                        src="../artist/historic-classical(1)/artist-images/artist1.jpg" alt="">
+                                    <div class="col-9">
+                                        <p style="margin: 0;padding: 0; font-size: small;"><a
+                                                style="color:white; text-decoration: none;"
+                                                href="../artist/historic-classical(1)/artist-pages/artist1.html">Alaric
+                                                Thorne</a></p>
+                                        <p
+                                            style="font-size:10px;margin: 0;padding: 0;margin-top: 2px; color:  #636363;">
+                                            A voice that turns emotion into thunder and silence into impact..</p>
+                                    </div>
+
+                                </div>
+                                <div class="card  ">
+                                    <img class="composer-img"
+                                        src="../artist/historic-classical(1)/artist-images/artist2.png" alt="">
+                                    <div>
+                                        <p style="margin: 0;padding: 0; font-size: small;"><a
+                                                style="color:white; text-decoration: none;"
+                                                href="../artist/historic-classical(1)/artist-pages/artist2.html">Aurelian
+                                                Kassos</a></p>
+                                        <p
+                                            style="font-size:10px;margin: 0;padding: 0;margin-top: 2px; color:  #636363;">
+                                            Every riff tells a story of rebellion and truth.</p>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <img class="composer-img"
+                                        src="../artist/historic-classical(1)/artist-images/artist3.jpg" alt="">
+                                    <div>
+                                        <p style="margin: 0;padding: 0; font-size: small;"><a
+                                                style="color:white; text-decoration: none;"
+                                                href="../artist/historic-classical(1)/artist-pages/artist3.html">Edric
+                                                Valemont</a></p>
+                                        <p
+                                            style="font-size:10px;margin: 0;padding: 0;margin-top: 2px; color:  #636363;">
+                                            Sound born from fire, struggle, and fearless expression.</p>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <img class="composer-img"
+                                        src="../artist/historic-classical(1)/artist-images/artist4.jpg" alt="">
+                                    <div>
+                                        <p style="margin: 0;padding: 0; font-size: small;"><a
+                                                style="color:white; text-decoration: none;"
+                                                href="../artist/historic-classical(1)/artist-pages/artist4.html">Julien
+                                                Marcheval</a></p>
+                                        <p
+                                            style="font-size:10px;margin: 0;padding: 0;margin-top: 2px; color:  #636363;">
+                                            More than music — a global pop phenomenon.</p>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <img class="composer-img"
+                                        src="../artist/historic-classical(1)/artist-images/artist5.jpg" alt="">
+                                    <div>
+                                        <p style="margin: 0;padding: 0; font-size: small;"><a
+                                                style="color:white; text-decoration: none;"
+                                                href="../artist/historic-classical(1)/artist-pages/artist5.html">Samuel
+                                                Reinhardt</a></p>
+                                        <p
+                                            style="font-size:10px;margin: 0;padding: 0;margin-top: 2px; color:  #636363;">
+                                            Breaking charts, shaping culture, and owning the spotlight.</p>
+                                    </div>
+
+                                </div>
+                                <div class="card d-lg-flex d-md-flex d-sm-none d-none">
+                                    <img class="composer-img"
+                                        src="../artist/Baroque-classic(3)/artist-images/artist3.jpg " alt="">
+                                    <div>
+                                        <p style="margin: 0;padding: 0; font-size: small;"><a
+                                                style="color:white; text-decoration: none;"
+                                                href="../artist/Baroque-classic(3)/artist-pages/artist3.html">Isabelle
+                                                Montclair</a></p>
+                                        <p
+                                            style="font-size:10px;margin: 0;padding: 0;margin-top: 2px; color:  #636363;">
+                                            A voice that turns moments into memories.</p>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- top composer card ended -->
+                    </d iv>
+                    <!-- Best of year collection started -->
+                    <h1 style="margin-top: 10px; margin-left: 30px;">Best Of The Year</h1>
+                    <div class="collection-boty" style=" margin-left: 15px; padding-right: 15px;">
+                        <div class="col-auto  ">
+                            <div class="boty-card ">
+                                <img class="boty-img" src="../albums/historic-classical(1)/album-images/image1.jpg"
+                                    alt="">
+                                <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                        href="../albums/historic-classical(1)/album-pages/album1.html"
+                                        class="boty-content">Echoes of the Medieval World</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-auto ">
+                            <div class="boty-card ">
+                                <img class="boty-img" src="../albums/historic-classical(1)/album-images/image2.jpg"
+                                    alt="">
+                                <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                        href="../albums/historic-classical(1)/album-pages/album2.html"
+                                        class="boty-content">Echoes of Ancient Empires</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-auto ">
+                            <div class="boty-card">
+                                <img class="boty-img" src="../albums/historic-classical(1)/album-images/image3.jpg"
+                                    alt="">
+                                <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                        href="../albums/historic-classical(1)/album-pages/album3.html"
+                                        class="boty-content">Medieval Chronicles</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="boty-card ">
+                                <img class="boty-img" src="../albums/historic-classical(1)/album-images/image4.webp"
+                                    alt="">
+                                <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                        href="../albums/historic-classical(1)/album-pages/album4.html"
+                                        class="boty-content">Age of Revolution</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Best of year collection ended-->
+                    <!-- latest release collection started -->
+                    <h1 style="margin-top: 10px; margin-left: 30px;">Latest Release</h1>
+                    <div class="ltcards" style=" padding-right: 20px; margin-left: 15px;">
+                        <div class="col-auto">
+                            <div class="lt-card ">
+                                <img class="lt-img" src="../albums/Baroque-classic(3)/album-images/image1.jpg" alt="">
+                                <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                        href="../albums/Baroque-classic(3)/album-pages/album1.html"
+                                        class="boty-content">Golden Age of Counterpoint </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="lt-card ">
+                                <img class="lt-img" src="../albums/Baroque-classic(3)/album-images/image3.jpg" alt="">
+                                <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                        href="../albums/Baroque-classic(3)/album-pages/album3.html"
+                                        class="boty-content">Harpsichord & Silk</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="lt-card ">
+                                <img class="lt-img" src="../albums/Baroque-classic(3)/album-images/image5.jpg" alt="">
+                                <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                        href="../albums/Baroque-classic(3)/album-pages/album5.html"
+                                        class="boty-content">Sacred Harmonies</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="lt-card ">
+                                <img class="lt-img" src="../albums/Baroque-classic(3)/album-images/image4.jpg "alt="">
+                                <p style=" margin-top: 10px; margin-left: 10px;"><a
+                                        href="../albums/Baroque-classic(3)/album-pages/album4.html"
+                                        class="boty-content">The Baroque Virtuoso</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- latest release collection ended -->
+                    <!-- footer started -->
+                    <footer class="footer row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <h1>About us</h1>
+                            <p style="color: #636363;border-bottom: 1.5px solid #333;padding-bottom: 8px;">
+                                MusicWorld.com
+                                brings you the latest releaseas, top Artist,and music events from around the world
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <h1>Top Artist</h1>
+                            <ul>
+                                <li><a href="../../../artist/teen-pop(3)/artist-pages/artist2.html">Justin Bieber</a>
+                                </li>
+                                <li><a href="../../../artist/teen-pop(3)/artist-pages/artist1.html">Taylor Swift</a>
+                                </li>
+                                <li><a href="../../../artist/teen-pop(3)/artist-pages/artist4.html">Ariana Grande</a>
+                                </li>
+                                <li><a href="../../../artist/teen-pop(3)/artist-pages/artist5.html">Selena Gomez</a>
+                                </li>
+                                <li><a href="../../../artist/dance-pop(2)/artist-pages/artist2.html">Lady Gaga</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <h1>Top Albums</h1>
+                            <ul>
+                                <li><a href="../../../albums/k-pop(1)/album-pages/album1.html">Map of the Soul:
+                                        Persona</a></li>
+                                <li><a href="../../../albums/teen-pop(3)/album-pages/album5.html">Kiss & Tell</a></li>
+                                <li><a href="../../../albums/teen-pop(3)/album-pages/album1.html">Fearless</a></li>
+                                <li><a href="../../../albums/hard-rock(1)/albumspages/album1.html">Back in Black</a>
+                                </li>
+                                <li><a href="../../../albums/k-pop(1)/album-pages/album2.html">The Album</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                            <h1>Contact Us</h1>
+                            <p style="color: #636363;">Email:<a style="color:#636363;"
+                                    href="mailto:info@musicworld.example">info@musicworld.example</a>
+                            </p>
+                            <p style="color: #636363;">📞 +92-000-893938</p>
+                        </div>
+                    </footer>
+                    <div class="footer-last-part">Copyright © 2026 MusicWorld.</div>
+                    <!-- Footer Ended -->
+                </div>
+            </div>
+        </div>
+        <script src="../music/music.js"></script>
+        <script src="../../../searchbar.js"></script>
+</body>
+
+</html>
