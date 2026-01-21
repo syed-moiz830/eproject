@@ -17,7 +17,8 @@
         <h1 class="mainhead">
             Enter your info to sign in</h1>
         <p class="first-p">Register Your Account</p>
-        <input type="email" id="username" placeholder="Email Or Mobile Number">
+        <input type="email" id="username" required placeholder="Email"
+pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
         <p id="mini-error">⚠️ Please enter a valid email or mobile number.</p>
         <div class="password-div">
             <input type="password" id="password" placeholder="Password">
