@@ -3,7 +3,7 @@ msgbtn.addEventListener("click", () => {
     let firstname = document.getElementById("first-name");
     let lastname = document.getElementById("last-name");
     let email = document.getElementById("email");
-    let msg = document.getElementById("message");
+    let password = document.getElementById("password");
     switch (true) {
         case firstname.value.trim() === "":
             firstname.focus()
@@ -17,19 +17,25 @@ msgbtn.addEventListener("click", () => {
             email.focus()
                alert("Fullfill All The Requirements First")
             break;
-        case msg.value.trim() === "":
-            msg.focus()
+        case password.value.trim() === "":
+            password.focus()
             alert("Fullfill All The Requirements First")
             break;
 
         default:
-            alert("Message Is Sent");
-            msg.value =""
+            alert("Register Sucessfully");
+            localStorage.setItem("email", email.value);
+            localStorage.setItem("pass", password.value);
+            password.value =""
             email.value = ""
             lastname.value = ""
             firstname.value = ""
+            window.location.href="../signin/signin.html"
             break;
     }
+     
+        
+
 
 })
      let email = localStorage.getItem("email");

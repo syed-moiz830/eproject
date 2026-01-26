@@ -2,6 +2,8 @@ let username = document.getElementById("username");
 let password = document.getElementById("password");
 let error = document.getElementById("error");
 let previousPage = document.referrer;
+let reg_email=localStorage.getItem("email");
+let pass= localStorage.getItem("pass");
 //  js for each empty input error apperance
 // if both boxes are full
 
@@ -50,16 +52,20 @@ btn.addEventListener("click", (e) => {
     else {
         error.style.visibility= "hidden"
         document.querySelector("#mini-error").style.visibility= "hidden"
-        localStorage.setItem("email", username.value);
-        localStorage.setItem("pass", password.value);
-        setTimeout(() => {
-            alert("Register Successfully");
-            window.location.href = previousPage;
-        }, 70);
+        if (username.value==reg_email &&
+  password.value === pass) {
+             alert("Sign In Successfully");
+             window.location.href=PreviousPage
+            
+        } else {
+            alert("Enter Correct Information")
+        }
+        
+      
     }
 })
 //  password show and hide
-let togglebtn = document.querySelector("svg");
+let togglebtn = document.querySelector(".eye-icon");
 togglebtn.addEventListener("click", () => {
     if (password.type === "password") {
         password.type = "text"
