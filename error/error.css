@@ -1,9 +1,4 @@
 body {
-    background-color: #121212;
-    color: #f7f7fb;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
 
@@ -126,6 +121,117 @@ body {
     }
 
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    /* background-image: url(error\ 404.png); */
+    background: #000;
+    color: aqua;
+    overflow: hidden;
+}
+
+/* Main Wrapper */
+.error-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)),
+        url("images/error-bg.png");
+    /* 🔥 PNG BACKGROUND */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pageEnter 1.2s ease forwards;
+}
+
+/* Content Box */
+.error-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 40px;
+    backdrop-filter: blur(6px);
+}
+
+/* Text */
+.error-content h1 {
+    font-size: 120px;
+    text-shadow: 0 0 25px aqua;
+}
+
+.error-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.error-content p {
+    color: #9ff;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.35s ease;
+}
+
+.btn.primary {
+    background: aqua;
+    color: #000;
+    box-shadow: 0 0 20px aqua;
+}
+
+.btn.outline {
+    border: 2px solid aqua;
+    color: aqua;
+}
+
+/* Hover Effects */
+.btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 30px aqua;
+}
+
+/* Page Animation */
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .error-content h1 {
+        font-size: 80px;
+    }
+
+    .error-content h2 {
+        font-size: 24px;
+    }
+}
 
 
 /* vertical navbar ended */
@@ -142,6 +248,7 @@ body {
     margin: 0;
     padding-right: 10px;
 }
+footer h1{color:white;}
 
 ul {
     padding: 0;

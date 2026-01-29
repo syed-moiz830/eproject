@@ -55,7 +55,12 @@ btn.addEventListener("click", (e) => {
         if (username.value==reg_email &&
   password.value === pass) {
              alert("Sign In Successfully");
-             window.location.href=PreviousPage
+             localStorage.setItem("login","true")
+             if (!previousPage.includes("register")) {
+        window.location.href = previousPage;
+    } else {
+        window.location.href = "../home/home.html";
+    }
             
         } else {
             alert("Enter Correct Information")

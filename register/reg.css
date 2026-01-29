@@ -179,6 +179,7 @@ input[type="TEXT"] {
     padding: 10px;
     border: none;
     border-radius: 10px;
+    width: 100%;
     color: #fff;
 }
 
@@ -188,19 +189,51 @@ input[type="email"] {
     border: none;
     border-radius: 10px;
     color: #fff;
-
     width: 99%;
     margin-left: 10PX;
 
 }
+input[type="password"]{background-color: #2A2A2A;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    width: 99%;
+    margin-left: 10PX;}
 
 
 .btn {
-    width: 12vw;
+    width: auto;
+    padding: 10px 60px;
     border-radius: 20px;
     margin: 20px;
     font-size: 17px;
     background-color: #00FFD5;
     font-weight: 600;
 }
+@media (max-width: 992px) {
+    .MAIN-CONTENT-div {
+        width: 80%;
+        padding: 20px;
+    }
+}
 
+@media (max-width: 768px) {
+    .MAIN-CONTENT-div {
+        width: 90%;
+        padding: 15px;
+    }
+    .content-main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .MAIN-CONTENT-div {
+        width: 95%;
+        padding: 10px;
+    }
+    .content-main {
+        width: 100%;
+    }
+}

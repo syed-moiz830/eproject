@@ -71,17 +71,18 @@
                         <span>Search</span>
 
                     </a>
-                   <a href="../../../aboutus/aboutus.html" class="nav-link">
-            <div>
-              <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="7" r="4" />
-                <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
-              </svg>
-            </div>
-            <span>About Us</span>
+                    <a href="../../../aboutus/aboutus.html" class="nav-link">
+                        <div>
+                            <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="7" r="4" />
+                                <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
+                            </svg>
+                        </div>
+                        <span>About Us</span>
 
-          </a>
+                    </a>
                 </nav>
             </div>
             <!-- vertical navbar ended -->
@@ -93,37 +94,44 @@
                         <p class="heading-main">Register Now</p>
 
                         <p class=" content-main">
-Create your account and step into a world of music without limits.
-From trending tracks to timeless classics, exclusive artist content, and personalized playlists — your sound journey starts here.
+                            Create your account and step into a world of music without limits.
+                            From trending tracks to timeless classics, exclusive artist content, and personalized
+                            playlists — your sound journey starts here.
                         </p>
-                        <div class="row name-containar">
-                            <div class="col-lg-6 col-12">
-                                <h6 class="sub-heading">First-Name</h6>
-                                <input id="first-name" type="text" placeholder="Enter Your First name">
+                        <form>
+                            <div class="row name-containar">
+                                <div class="col-lg-6 col-12">
+                                    <h6 class="sub-heading">First-Name</h6>
+                                    <input id="first-name" type="text" required pattern="^[A-Za-z]+$"
+                                        placeholder="Enter Your First name" title="Name can only contain letters">
+                                </div>
+                                <div class="col-lg-6 col-12 mt-lg-0 mt-4">
+                                    <h6 class="sub-heading">Last-Name</h6>
+                                    <input type="text" id="last-name" required pattern="^[A-Za-z]+$"
+                                        placeholder="Enter Your Last name"
+                                         title="Name can only contain letters">
+                                </div>
+                                <div class="row email-container">
+                                    <h6 class="sub-heading">Email ID</h6>
+                                    <input type="email" name="email" id="email" placeholder="Enter Email" required
+                                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                        title="Please enter a valid email (example@gmail.com)">
+                                </div>
+                                <div class="row password-container">
+                                    <h6 class="sub-heading" style="margin-top: 15px;">Password</h6>
+                                    <input type="password" id="password" placeholder="Enter Password" required minlength="8">
+                                </div>
+                                <button type="submit" class="btn">Register</button>
                             </div>
-                            <div class="col-lg-6 col-12">
-                                <h6 class="sub-heading">Last-Name</h6>
-                                <input type="text" id="last-name" placeholder="Enter Your Last name">
-                            </div>
-                            <div class="row email-containar">
-                                <h6 class="sub-heading" style="margin-top: 15px;">Email ID</h6>
-                                <input type="email" id="email" placeholder="Enter Email">
-                            </div>
-                            <div class="row email-containar">
-                                <h6 class="sub-heading" style="margin-top: 15px;">PASSWORD</h6>
-                                <input type="text" id="password" placeholder="Enter Password">
-                            </div>
-                            
-                            <button class="btn">Register</button>
-                        </div>
                     </div>
-                        
+                    </form>
                 </div>
             </div>
         </div>
     </div>
     <script src="./reg.js"></script>
     <script src="../../../searchbar.js"></script>
+    <script src="../../../download.js"></script>
 </body>
 
 </html>

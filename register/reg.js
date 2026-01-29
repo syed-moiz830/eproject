@@ -1,5 +1,6 @@
-let msgbtn = document.querySelector(".btn");
-msgbtn.addEventListener("click", () => {
+let form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
     let firstname = document.getElementById("first-name");
     let lastname = document.getElementById("last-name");
     let email = document.getElementById("email");

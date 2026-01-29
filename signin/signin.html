@@ -72,53 +72,51 @@
 
                     </a>
                     <a href="../../../aboutus/aboutus.html" class="nav-link">
-            <div>
-              <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="7" r="4" />
-                <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
-              </svg>
-            </div>
-            <span>About Us</span>
-
-          </a>
+                        <div>
+                            <svg class="ver-nav-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="7" r="4" />
+                                <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
+                            </svg>
+                        </div>
+                        <span>About Us</span>
+                    </a>
                 </nav>
             </div>
             <!-- vertical navbar ended -->
             <!-- /* banner Started */ -->
             <div style="overflow-x:hidden;overflow-y: auto; height: 89vh;" class="col-lg-11 col-md-10 col-sm-9 col-12">
+                <form autocomplete="off">
                 <div class="sign-in-content ">
-                    <h1 class="mainhead">
+                             <h1 class="mainhead">
                         Enter your info to sign in</h1>
                     <p class="first-p">Log In To Your Account <b>Or</b> Create A <a href="../register/reg.html" style="color: white; text-decoration: none; font-weight: bold;">New Account</a></p>
-                    
-                    <input type="email" id="username" required placeholder="Email"
-                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    <p id="mini-error">⚠️ Please enter a valid email or mobile number.</p>
-                    <div class="password-div">
-                        <input type="password" id="password" placeholder="Password">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" class="eye-icon"
-                            stroke="#00FFD5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                        </svg>
-
-
-
+                        <input type="email" id="username" required placeholder="Email" required
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                            title="Please enter a valid email (example@gmail.com)">
+                        <p id="mini-error">⚠️ Please enter a valid email or mobile number.</p>
+                        <div class="password-div">
+                            <input type="password" id="password" placeholder="Password" required minlength="8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" class="eye-icon" stroke="#00FFD5" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <p id="error">⚠️ Enter Password First</p>
+                        <div class="buttons">
+                            <button type="submit" class="btn">Sign In</button>
+                            <a href="../home/home.html" class="btn">Back</a>
+                        </div>
                     </div>
-                    <p id="error">⚠️ Enter Password First</p>
-                    <div class="buttons" style="align-self: flex-start; padding-left: 40px;">
-                        <button class="btn">Sign In</button>
-                        <a href="../home/home.html" class="btn">Back</a>
-                    </div>
-                   
-
-
-                </div>
+                </form>
             </div>
         </div>
     </div>
     <script src="../searchbar.js"></script>
     <script src="../signin/signin.js"></script>
-  </body>
-  </html>
+</body>
+
+</html>

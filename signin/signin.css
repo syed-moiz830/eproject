@@ -24,13 +24,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 60%;
     margin: auto;
     height: auto;
-    margin-top: 20vh;
+    margin-top: 50px;
     padding: 40px;
     border-radius: 50px;
-    border: 2px solid white;
 }
 
 .mainhead {
@@ -43,7 +42,7 @@ body {
 
 input[type="email"] {
     background-color: #2A2A2A;
-    width: 30vw;
+    width: 60%;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -54,7 +53,7 @@ input[type="email"] {
 
 input[type="password"] {
     background-color: #2A2A2A;
-    width: 30vw;
+    width:60%;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -65,7 +64,7 @@ input[type="password"] {
 
 input[type="text"] {
     background-color: #2A2A2A;
-    width: 30vw;
+    width: 60%;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -75,13 +74,15 @@ input[type="text"] {
 
 .password-div {
     position: relative;
-    width: 30vw;
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
 
 .eye-icon {
     position: absolute;
-    right: 6px;
-    top: 40px;
+    left: 75%;
+    top: 57.5%;
 }
 
 .btn {
@@ -90,48 +91,63 @@ input[type="text"] {
     font-weight: bold;
     margin-left: 10px;
     margin-top: 30px;
+    padding: 10px 60px;
 }
-
-@media (max-width:962px) {
-
+@media (max-width: 992px) { /* Medium devices - tablets */
     .sign-in-content {
-        width: 60%;
+        width: 75%;
     }
 
-}
-
-@media (max-width:688px) {
-
-    .sign-in-content {
-        width: 80%;
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: 90%;
     }
+    .eye-icon{left:90%;}
 
-}
-
-@media (max-width:468px) {
-
-    .sign-in-content {
-        width: 100%;
+    .btn {
+        padding: 10px 40px;
         margin-left: 0;
-        margin-right: 0;
-        border: none;
-        justify-content: flex-start;
-        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) { /* Small tablets */
+    .sign-in-content {
+        width: 85%;
+        padding: 25px;
     }
 
-    input[type="password"] {
-        width: 300px;
 
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: 95%;
     }
 
-    input[type="email"] {
-        width: 300px;
+    .btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) { /* Mobile devices */
+    .sign-in-content {
+        width: 95%;
+        padding: 20px;
     }
 
-    input[type="password"] {
-        width: 300px;
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: 100%;
     }
-    svg{left:270px ;}
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+
+    }
 }body {
     background-color: #121212;
     color: #f7f7fb;
