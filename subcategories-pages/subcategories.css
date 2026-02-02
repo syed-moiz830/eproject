@@ -194,6 +194,7 @@ body {
 .ins-card-content {
     color: white;
     text-decoration: none;
+    animation: slideright 6s ease-out forwards;
 }
 
 .album-card-content:hover,
@@ -223,12 +224,31 @@ body {
     width: 220px;
 }
 
+
 .album-img,
 .event-img,
 .ins-img {
     width: 100%;
     height: 20vh;
     border-radius: 20px;
+    animation: slideleft 2s ease-out forwards;
+}
+@keyframes slideright {
+    from{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to{opacity: 1;
+    transform: translateX(0);}
+
+    
+}
+@keyframes slideleft {
+    from{opacity: 0;
+    transform: translateX(-40px);}
+    to{opacity: 1;
+    transform: translateX(0);}
+    
 }
 
 .artist-card {
@@ -241,6 +261,7 @@ body {
     border-radius: 50%;
     height: 30vh;
     width: 100%;
+    animation: slideleft 2s ease-out forwards;
 }
 
 

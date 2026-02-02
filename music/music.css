@@ -273,7 +273,22 @@ body {
     padding: 10px;
     flex: 0 0 auto;
     width: 290px;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.3s ease;
+    border-radius: 20px;
+    cursor: pointer;
+
 }
+
+.category-card:hover,
+.article:hover,
+.boty-card:hover,
+.lt-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
 
 .category-img,
 .article-img,
@@ -312,7 +327,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-left:20px ;
+    padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -429,7 +444,7 @@ body {
 
     .composer-img {
         width: 80px;
-        height:70px;
+        height: 70px;
     }
 
     .top-composer-head {
